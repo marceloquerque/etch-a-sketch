@@ -34,7 +34,7 @@ h1 {
     margin: 0 auto;
     top: 100px;
     width: 900px;
-    height: 700px;
+    height: 675px;
     border-radius: .3rem;
     box-shadow: 0 0 0 20px #000;
     display: flex;
@@ -46,6 +46,10 @@ h1 {
 .grid { 
     /* CDD0CB E8EAE6 */
     border: 1px solid #CDD0CB;
-    width: 60px;
-    height: 60px;
+    width: 56.25px;
+    height: 56.25px;
+}
+
+.hover {
+    background-color: #000;
 }

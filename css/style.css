@@ -12,23 +12,20 @@ body {
     height: 100vh;
 }
 
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);   
+}
+
 .frame {
-    position: relative;
     width: 1100px;
     height: 1100px;
     border-radius: 2.2rem;
     box-shadow: 0 0 0 30px #000;
-    text-align: center;
 }
 
-h1 {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    
-}
-
-.inner-frame {
+.grid-frame {
     background-color: #F0F0F0;
     position: relative;
     margin: 0 auto;
@@ -52,4 +49,33 @@ h1 {
 
 .hover {
     background-color: #000;
+}
+
+.control-panel {
+    top: 150px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    /* left: 120px; */
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: .5rem;
+    color: #FCFCFF;
+    font-weight: bold;
+}
+
+.black {
+    background-color: #000;
+}
+
+.ice-blue{
+    background: linear-gradient(180deg, #E8F9FD, #79DAE8, #0AA1DD, #2155CD)
+}
+
+.sunset {
+    background: linear-gradient(180deg, #FFE15D, #F49D1A, #DC3535, #B01E68)
 }

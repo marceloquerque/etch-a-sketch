@@ -3,3 +3,50 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: #FCFCFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.frame {
+    position: relative;
+    width: 1100px;
+    height: 1100px;
+    border-radius: 2.2rem;
+    box-shadow: 0 0 0 30px #000;
+    text-align: center;
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    
+}
+
+.inner-frame {
+    background-color: #F0F0F0;
+    position: relative;
+    margin: 0 auto;
+    top: 100px;
+    width: 900px;
+    height: 700px;
+    border-radius: .3rem;
+    box-shadow: 0 0 0 20px #000;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+}
+
+.grid { 
+    /* CDD0CB E8EAE6 */
+    border: 1px solid #CDD0CB;
+    width: 60px;
+    height: 60px;
+}

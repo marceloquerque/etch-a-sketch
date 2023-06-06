@@ -43,12 +43,6 @@ h1 {
 .grid { 
     /* CDD0CB E8EAE6 */
     border: 1px solid #E8EAE6;
-    width: 56.25px;
-    height: 56.25px;
-}
-
-.hover {
-    background-color: #000;
 }
 
 .control-panel {
@@ -60,42 +54,24 @@ h1 {
     /* left: 120px; */
 }
 
-/* button {
-    color: #FCFCFF;
-    border: none;
-    border-radius: .5rem;
-    padding: 10px 25px;
-    margin: 4px 2px;
-    font-weight: bold;
-}          */
-
 button {
-   /* background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%); */
-   padding: 15px 35px;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
-   box-shadow: 0 0 20px #eee;
-   border-radius: 10px;
-   cursor: pointer;
+    height: 50px;
+    width: 90px;
+    text-transform: uppercase;
+    background-color: #000;
+    color: white;         
+    border-radius: .3rem;
+    cursor: pointer;
  }
 
- button:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
- }
-
-
-.black {
+#black {
     background-color: #000;
 }
 
-.ice-blue{
+#ice{
     background: linear-gradient(180deg, #E8F9FD, #79DAE8, #0AA1DD, #2155CD)
 }
 
-.sunset {
+#sunset {
     background: linear-gradient(180deg, #FFE15D, #F49D1A, #DC3535, #B01E68)
 }

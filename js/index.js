@@ -14,6 +14,7 @@ const colors = {
     sunset: ["#FFE15D", "#F49D1A", "#DC3535", "#B01E68"],
 }
 
+// select grid frame
 const gridFrame = document.querySelector(".grid-frame")
 
 // create <div>'s and append them to the parent
@@ -29,12 +30,14 @@ function createGrid(numberOfColumns, numberOfRows, size) {
             grid.setAttribute("style", `width: ${size}px; height: ${size}px`)
             gridFrame.appendChild(grid)
             grid.addEventListener("mouseover", (event) => {
-                event.target.style.background = randColor()
+                let color = randColor();
+                event.target.style.background = color;
             })
         }
     }
 }
 
+// select all buttons
 const buttons = document.querySelectorAll(".btn")
 
 // change grid size buttons functionality 
@@ -57,9 +60,10 @@ buttons.forEach(button => {
 
 // random colors
 function randColor(color) {
-    console.log(typeof color)
-    console.log(typeof sunset)
-    return colors.sunset[Math.floor(Math.random() * colors.sunset.length)]
+    console.log(colors[color])
+    const colorArray = colors[color] || colors.ice
+    let randomIndex = Math.floor(Math.random() * colorArray.length)
+    return colorArray[randomIndex]
 }
 
 // start grid size values
